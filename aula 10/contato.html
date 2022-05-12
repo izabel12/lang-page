@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+   </head>
+<body>
+
+    <a href="index.html">Inicio</a>
+    <a href="index2.html">sobre nos</a>
+    <a href="contato.html">contato</a>
+    
+    <h1>formulário</h1>
+
+    <fieldset>
+        <legend>dados pesoais</legend>
+    <form action="" method="post"></form>
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome" placeholder="escreva seu nome">
+    <label for="email">email</label>
+    <input type="email" name="email" id="email" placeholder="digite seu email" required>
+    <br><br><label for="fone">telefone celular
+    <input type="tel" name="fone" id="fone" required pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"placeholder="92 999999999" >
+    </label>
+    <label for="hora">horario</label>
+    <input type="time" name="hora" id="hora" required>
+    <br><br><label for="data">data de nascimento</label>
+    <input type="date" name="data" id="data" required>
+    <label for="peso">peso</label>
+     0<input type="range" name="peso" id="peso" min="0" max="200">200
+     <p>sexo</p>
+     <input type="radio" name="sexo" id="sexo-m" value="masculino">
+     <label for="sexo-m">masculino</label>
+     <input type="radio" name="sexo" id="sexo-f" value="feminino">
+     <label for="sexo-f">feminino</label>
+     <br><br>
+
+     <label for="estado">estado</label>
+     <select name="estado" id="estado">
+     <option value="sp">SAO PAULO</option>
+     <option value="AM">AMAZONAS</option>
+     <option value="RJ">RIO DE JANEIRO</option>
+     <option value="pA">PARA</option>
+    </select>
+    <BR><BR>
+        <label for="msg">mensagem</label>
+        <br><br>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+    </fieldset>
+
+    <input type="reset" value="reset">
+    <input type="submit" value="enviar">
+    
+
+</body>
+</html>
